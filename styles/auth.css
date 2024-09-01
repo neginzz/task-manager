@@ -25,18 +25,12 @@
 .form-left h2,.form-left p{
     color: #fff;
     text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .form-right {
     flex: 2;
-}
-
-.form-left h2 {
-    margin-bottom: 20px;
-}
-
-.form-left p {
-    margin-bottom: 20px;
 }
 
 .form-right form {
@@ -50,13 +44,14 @@
     text-align: left;
 }
 
+
 .form-right input[type="text"],
 .form-right input[type="password"],
 .form-right input[type="email"] {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .remember-me {
@@ -68,13 +63,16 @@
 .remember-me input {
     margin-right: 10px;
 }
+.remember-me label {
+    margin-bottom: 0;
+}
 
 .form-right button {
     padding: 10px;
     background-color: #2c3e50;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -85,12 +83,12 @@
 
 .form-footer {
     margin-top: 20px;
-    color: #2c3e50;
+    color: #7f8c8d;
     text-align: center;
 }
 
 .form-footer a {
-    color: #3498db;
+    color: #2c3e50;
     text-decoration: none;
 }
 
