@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task - Task Manager</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/tasks.css">
+</head>
+<body>
+    <div class="container container-task">
+        <a href="task-list.html" class="back-button">&larr; Back</a>
+        <h2>Create New Task</h2>
+        <form id="task-form" class="task-form">
+            <input type="text" id="task-name" placeholder="Enter task name" required>
+            <input type="date" id="task-date" required>
+            <select id="task-priority" required>
+                <option value="">Select priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button type="submit">Save Task</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

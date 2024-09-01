@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Task Manager</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-section form-left">
+                <h2>Welcome to Task Manager</h2>
+                <p>Organize your tasks and stay on top of your productivity.</p>
+            </div>
+            <div class="form-section form-right">
+                <h3>Sign Up</h3>
+                <form id="sign-up-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="m@example.com" required>
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Password</label>
+                    </div>
+                    
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <p class="form-footer">Already have an account? <a href="sign-in.html">Login</a></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

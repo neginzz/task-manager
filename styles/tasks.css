@@ -1,0 +1,138 @@
+/*** TASKS ***/
+
+/* Shared Styles */
+.container-task {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Back & New Task btn  */
+.back-button, .new-task-button{
+    color: #2c3e50;
+    text-decoration: none;
+    background-color: #fff; 
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.back-button:hover, .new-task-button:hover {
+    background-color: #f4f4f4;
+    color: #2c3e50; 
+}
+
+/* Create Task  */
+.task-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.task-form input,
+.task-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Save Task btn */
+.task-form button {
+    padding: 12px 24px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end; /* Align button to the right */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-form button:hover {
+    background-color: #1a252f;
+}
+
+/* Task List  */
+.task-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.done {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+/* Priority labels */
+.priority {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.priority-high {
+    background-color: #e74c3c;
+}
+
+.priority-medium {
+    background-color: #2c3e50;
+}
+
+.priority-low {
+    background-color: #7f8c8d;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    color: #2c3e50;
+}
+
+.filter-buttons button:hover {
+    background-color: #f4f4f4;
+}
+
+
+
