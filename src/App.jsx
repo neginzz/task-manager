@@ -1,13 +1,12 @@
-import { useState } from "react";
-
 import "./App.css";
+import SignupPage from "./pages/SignupPage";
+
 
 function App() {
   return (
-    <>
-      <h1>hey</h1>
-      <p>lorem</p>
-    </>
+    <div className="container">
+      <SignupPage/>
+    </div>
   );
 }
 
