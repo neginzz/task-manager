@@ -1,13 +1,16 @@
 import React from "react";
 import Container from "../components/Container";
 import Subtitle from "../components/Subtitle";
+import SignupCol from "../components/SignupCol";
 
 
 function SignupPage() {
   return (
     <>
-      <Container/>
-      <Subtitle/>
+      <Container>
+        <SignupCol/>
+      </Container>
+      <Subtitle page="signup"/>
     </>
   );
 }

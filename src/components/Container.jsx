@@ -1,12 +1,11 @@
-import FormCol from "./FormCol";
 import TitleCol from "./TitleCol";
 
 
-function Container() {
+function Container({children}) {
   return (
     <div className="form-container">
       <TitleCol />
-      <FormCol />
+      {children}
     </div>
   );
 }

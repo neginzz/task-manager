@@ -1,9 +1,10 @@
 import React from "react";
 
-function Subtitle() {
+function Subtitle({ page }) {
   return (
     <p class="form-footer">
-      Already have an account? <a href="sign-in.html">Login</a>
+      {page === "login" ? "Don't have an account?" : "Already have an account?"}{" "}
+      <a href={page==="login"?"/signup":"/login"}>{page==="login"?"Signup":"Login"}</a>
     </p>
   );
 }

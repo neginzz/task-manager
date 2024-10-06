@@ -3,7 +3,7 @@ import Input from "./Input";
 import Checkbox from "./Checkbox";
 import Button from "./Button";
 
-function FormCol() {
+function SignupCol() {
   return (
     <div className="form-section form-right">
       <h3>Sign Up</h3>
@@ -33,4 +33,4 @@ function FormCol() {
   );
 }
 
-export default FormCol;
+export default SignupCol;
