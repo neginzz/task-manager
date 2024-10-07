@@ -1,7 +1,7 @@
 import React from "react";
-import LoginCol from "../components/LoginCol";
-import Subtitle from "../components/Subtitle";
-import Container from "../components/Container";
+import LoginCol from "./LoginCol";
+import Subtitle from "../../components/Subtitle";
+import Container from "../../layout/Container";
 
 function LoginPage() {
   return (

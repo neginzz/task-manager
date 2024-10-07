@@ -1,4 +1,4 @@
-import TitleCol from "./TitleCol";
+import TitleCol from "../components/TitleCol";
 
 
 function Container({children}) {

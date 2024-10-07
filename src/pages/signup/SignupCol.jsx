@@ -1,18 +1,24 @@
 import React from "react";
-import Input from "./Input";
-import Checkbox from "./Checkbox";
-import Button from "./Button";
+import Input from "../../components/Input";
+import Checkbox from "../../components/Checkbox";
+import Button from "../../components/Button";
 
-function LoginCol() {
+function SignupCol() {
   return (
     <div className="form-section form-right">
-      <h3>Login</h3>
-      <form id="sign-in-form">
+      <h3>Sign Up</h3>
+      <form id="sign-up-form">
         <Input
           type="text"
           id="username"
           label="Username"
           placeholder="Enter your username"
+        />
+        <Input
+          type="email"
+          id="email"
+          label="Email"
+          placeholder="m@example.com"
         />
         <Input
           type="password"
@@ -21,10 +27,10 @@ function LoginCol() {
           placeholder="Enter your password"
         />
         <Checkbox id="remember" label="Remember Password" />
-        <Button label="Login" />
+        <Button label="Sign Up" />
       </form>
     </div>
   );
 }
 
-export default LoginCol;
+export default SignupCol;

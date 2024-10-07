@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../components/Container";
-import Subtitle from "../components/Subtitle";
-import SignupCol from "../components/SignupCol";
+import Subtitle from "../../components/Subtitle";
+import Container from "../../layout/Container";
+import SignupCol from "./SignupCol";
 
 
 function SignupPage() {
