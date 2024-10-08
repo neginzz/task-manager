@@ -1,13 +1,20 @@
-import { useState } from "react";
-
 import "./App.css";
+import ErrorPage from "./pages/ErrorPage";
+import LoginPage from "./pages/login/LoginPage";
+import SignupPage from "./pages/signup/SignupPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <h1>hey</h1>
-      <p>lorem</p>
-    </>
+    <div className="container">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ErrorPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
