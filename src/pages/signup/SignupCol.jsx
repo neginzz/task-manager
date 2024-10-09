@@ -37,8 +37,7 @@ function SignupCol() {
     // console.log("res", await response.json());
 
     const responseJson=await response.json()
-    console.log('res:', responseJson);
-    
+    // console.log('res:', responseJson);
 
     localStorage.setItem('token', responseJson.accessToken)
   };
