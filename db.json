@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "negin.z566@gmail.com",
+      "password": "$2a$10$2XW3cvKze.cA3qbhyoUg6e/wSHWBU/HdPjZFl7Y3I.LpNbZei.nzy",
+      "username": "Neginz",
+      "remember": true,
+      "id": 1
+    },
+    {
+      "email": "ali.f@gmail.com",
+      "password": "$2a$10$/OZsZ3wbDBrSHkIWimFWvuXOPSN9pQjda.uC8RpJstp3m0JNLE2Ka",
+      "username": "ali",
+      "remember": true,
+      "id": 2
+    },
+    {
+      "email": "negin.workstuff94@gmail.com",
+      "password": "$2a$10$Aa6ZbWN79R/2lFUxtWZ4XO7tJURnt7CnIw/mH1MV1LRTIThkXq8Ja",
+      "username": "vampz",
+      "remember": true,
+      "id": 3
+    }
+  ]
+}

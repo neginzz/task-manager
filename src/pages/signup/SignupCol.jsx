@@ -13,20 +13,34 @@ function SignupCol() {
   const handleOnChange = (e) => {
     const id = e.target.id;
     const value =
-      e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+      e.target.type === "checkbox" ? e.target.checked : e.target.value;
 
     setUserInfo((prevState) => ({ ...prevState, [id]: value }));
-
   };
 
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     // console.log("usename:", userName);
     // console.log("email:", email);
     // console.log("password:", password);
-    console.log("userInfo:", userInfo);
+    // console.log("userInfo:", userInfo);
+    const response = await fetch("http://localhost:3000/register", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "content-Type": "application/json",
+      },
+      body: JSON.stringify(userInfo),
+    });
+
+    // console.log("res", await response.json());
+
+    const responseJson=await response.json()
+    console.log('res:', responseJson);
+    
+
+    localStorage.setItem('token', responseJson.accessToken)
   };
 
   return (
@@ -55,7 +69,6 @@ function SignupCol() {
           onChange={handleOnChange}
         />
         <Checkbox
-
           id="remember"
           label="Remember Password"
           onChange={handleOnChange}
